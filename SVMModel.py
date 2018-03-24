@@ -23,7 +23,7 @@ X_train, X_test, y_train,y_test = train_test_split(X,y,random_state=0)
 totalPointsInTrainSet = (y_train == 1).sum()+ (y_train == 0).sum()
 totalPointsInTestSet = (y_test == 1).sum()+ (y_test == 0).sum()
 
-print("Total train sets is %s and it includes %s landslide points" % (totalPointsInTrainSet, (y_train == 1).sum()))
+
 print("Total test sets is %s and it includes %s landslide points" % (totalPointsInTestSet, (y_test == 1).sum()))
 
 
