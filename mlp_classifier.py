@@ -31,7 +31,7 @@ x_train, x_test, y_train, y_test = train_test_split(input_data, output_data, ran
 mlp = MLPClassifier(activation="relu", random_state=1, solver="adam", hidden_layer_sizes=(10, 12, 10))
 clf= AdaBoostClassifier(n_estimators=100)
 
-algorithm = int(input("Please enter the training algorithm\n 1.MLP neural nets\n 2.Adaboost\n 3.Gussian Naive Bayes\n "))
+algorithm = int(input("Please enter the training algorithm\n 1.MLP neural nets\n 2.Adaboost\n 3.Gussian Naive Bayes\n 4.SVM\n "))
 
 if algorithm==Algorithms.MLP_Neural_Networks:
     print("Started training model...")
@@ -53,6 +53,8 @@ elif algorithm==Algorithms.AdaBoost:
 
     adaBoostprediction=clf.predict(x_test);
     finalizePrediction(adaBoostprediction);
+
+
 
 # elif algorithm==Algorithms.NaiveBayes:
 #
